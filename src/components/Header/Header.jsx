@@ -6,13 +6,13 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const myName = "Ozer Kelgembaitegin";
 
-function Header() {
+function Header({handlePageChange}) {
   return (
-    <Navbar bg="bg-transparent" expand="lg">
+    <Navbar bg="bg-transparent" className='sticky-top' expand="lg">
       <Container className="header p-0 ml-2 mr-2 w-100">
-        <Navbar.Brand href="#home">{myName}</Navbar.Brand>
+        <Navbar.Brand href="#home"  onClick={() => handlePageChange('Home')}>{myName}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navigation />
+        <Navigation handlePageChange={handlePageChange}/>
       </Container>
     </Navbar>
   )

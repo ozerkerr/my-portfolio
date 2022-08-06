@@ -22,7 +22,7 @@ const workExperience = {
 
 function Resume() {
   return (
-    <Container>
+    <Container className="my-5">
       <section className="d-flex flex-direction-row align-items-end justify-content-between my-3">
         <h5 className="m-0">Resume</h5>
         <Button

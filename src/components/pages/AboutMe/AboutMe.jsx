@@ -7,7 +7,7 @@ const aboutMeText = `I have actively delivered smart cutting-edge user interface
 
 function AboutMe() {
   return (
-    <Container>
+    <Container className="my-5">
       <section className="my-3">
         <h5>About Me</h5>
       </section>

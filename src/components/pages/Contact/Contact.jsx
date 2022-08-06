@@ -59,7 +59,7 @@ function Contact() {
   };
 
   return (
-    <div className="d-flex justify-content-center">
+    <div className="d-flex justify-content-center my-5">
       <Card className="w-50 d-flex justify-content-center">
         <Card.Header className="text-center">Contact Me</Card.Header>
         <Form className="d-flex flex-column justify-items-center">

@@ -33,7 +33,7 @@ function App() {
         <div id="stars2"></div>
         <div id="stars3"></div>
       </div>
-      <Header handlePageChange={handlePageChange}/>
+      <Header handlePageChange={handlePageChange} currentPage={currentPage}/>
       {renderPage()}
       {/* <Project /> */}
       <Footer />

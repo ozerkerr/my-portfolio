@@ -12,12 +12,7 @@ function AboutMe() {
         <h5>About Me</h5>
       </section>
       <section className="my-3">
-        <Image
-          src={ProfilePicture}
-          className="img-thumbnail"
-          // thumbnail={true}
-          rounded={true}
-        />
+        <Image src={ProfilePicture} className="img-thumbnail" rounded={true} />
       </section>
       {aboutMeText}
     </Container>

@@ -49,7 +49,7 @@ function Resume() {
       </section>
       <section className="my-3">
         <h6>
-          <strong>Experience</strong>
+          <strong>Experience:</strong>
         </h6>
         <p className="d-flex flex-column">
           <strong>

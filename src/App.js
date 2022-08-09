@@ -34,9 +34,12 @@ function App() {
         <div id="stars3"></div>
       </div>
       <Header handlePageChange={handlePageChange} currentPage={currentPage}/>
-      {renderPage()}
-      {/* <Project /> */}
-      <Footer />
+      <body id="body">
+        {renderPage()}
+      </body>
+      <div id="footer">
+        <Footer />
+      </div>
     </div>
   );
 }

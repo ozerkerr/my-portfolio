@@ -5,8 +5,17 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-body {
-  background-color: whitesmoke;
+#body {
+  min-height: 80vh;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+#footer {
+  position: relative;
+  bottom: 10px;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
 }
 
 .bucket-app {

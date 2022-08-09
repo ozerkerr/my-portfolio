@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="text-center text-lg-start w-100 navbar fixed-bottom d-flex justify-content-center">
+    <footer className="text-center text-lg-start w-100 navbar position-relative d-flex justify-content-center">
       <section className="d-flex justify-content-center justify-content-lg-between p-4">
         <a
           href="https://www.linkedin.com/in/ozer-kelgem-67b676140/"

@@ -21,6 +21,7 @@ function Contact() {
 
   // a function that validates if field has been left empty
   const validateEmpty = (field) => {
+    // validation for name field
     if (field === "name") {
       const enteredName = state.name.trim();
       if (enteredName.length === 0) {
@@ -30,6 +31,8 @@ function Contact() {
         setValidationName("");
       }
     }
+
+    // validation for email field
     if (field === "email") {
       const enteredEmail = state.email.trim();
       const isValidEmail = /\S+@\S+\.\S+/.test(enteredEmail);
@@ -47,6 +50,7 @@ function Contact() {
       }
     }
 
+    // validation for text field
     if (field === "text") {
       const enteredText = state.text.trim();
       if (enteredText.length === 0) {
@@ -58,6 +62,7 @@ function Contact() {
     }
   };
 
+  // render component
   return (
     <div className="d-flex justify-content-center my-5">
       <Card className="w-50 d-flex justify-content-center">
@@ -115,4 +120,5 @@ function Contact() {
   );
 }
 
+// export component
 export default Contact;

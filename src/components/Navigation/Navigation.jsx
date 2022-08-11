@@ -1,9 +1,12 @@
+// import components
 import "./Navigation.css";
 import React from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
+// creat component
 function Navigation({ handlePageChange, currentPage }) {
+  // active key for nav bar to track current page
   const activeKey =
     currentPage === "Home"
       ? 1
@@ -12,6 +15,7 @@ function Navigation({ handlePageChange, currentPage }) {
       : currentPage === "Contact"
       ? 3
       : 4;
+
   return (
     <Navbar.Collapse id="basic-navbar-nav w-50">
       <Nav className="me-auto align-items-center" activeKey={activeKey}>

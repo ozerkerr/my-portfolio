@@ -1,8 +1,9 @@
-// import './App.css';
+// import components
 import React from "react";
 import { Container, Button } from "react-bootstrap";
 import myRes from "../../../assets/files/OzerKelgemResume.docx";
 
+// object for experience
 const workExperience = {
   audit: `Building and enhancing web applications using ReactJS with TypeScript.
   Developing new features from scratch while closely working with product,
@@ -20,6 +21,7 @@ const workExperience = {
   Rebuild feed feature to improve reliability and performance.`,
 };
 
+// create component
 function Resume() {
   return (
     <Container className="my-5">

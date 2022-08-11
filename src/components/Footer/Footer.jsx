@@ -1,5 +1,6 @@
 import React from "react";
 
+// functional component for footer
 function Footer() {
   return (
     <footer className="text-center text-lg-start w-100 navbar position-relative d-flex justify-content-center">
@@ -56,10 +57,6 @@ function Footer() {
           </svg>
         </a>
       </section>
-      {/* <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-            © 2021 Copyright:
-            <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-          </div> */}
     </footer>
   );
 }

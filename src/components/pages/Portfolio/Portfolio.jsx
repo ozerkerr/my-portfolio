@@ -9,6 +9,7 @@ import WeatherDashboard from "../../../assets/images/WeatherDashboard.png";
 import Scheduler from "../../../assets/images/Scheduler.png";
 import BookSearchEngine from "../../../assets/images/BookSearchEngine.png";
 
+// create object for projects
 const projectsObj = [
   {
     id: 1,
@@ -49,16 +50,18 @@ const projectsObj = [
     id: 6,
     name: "Book Search Engine",
     img: BookSearchEngine,
-    deployedUrl: "https://github.com/ozerkerr/book-search-engine",
+    deployedUrl: "https://infinite-inlet-58538.herokuapp.com/",
     githubUrl: "https://github.com/ozerkerr/book-search-engine",
   },
 ];
 
+// create component
 function Portfolio() {
   return (
     <Container className="my-5">
       <h5 className="m-0">Portfolio</h5>
       <Container className="d-flex flex-row flex-wrap">
+        {/* map through object and render each one */}
         {projectsObj.map((project) => {
           return (
             <Row className="m-3" key={project.id}>
@@ -76,4 +79,5 @@ function Portfolio() {
   );
 }
 
+// export component
 export default Portfolio;

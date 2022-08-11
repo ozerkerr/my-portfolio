@@ -1,7 +1,10 @@
+// import components
 import React from "react";
 import { Container, Figure } from "react-bootstrap";
 
+// create component
 function Project({ projectImg, deployedUrl, githubUrl, name }) {
+  // create function that returns github icon
   const renderGithubIcon = (githubUrl) => {
     return (
       <a
@@ -25,6 +28,7 @@ function Project({ projectImg, deployedUrl, githubUrl, name }) {
     );
   };
 
+  // render component
   return (
     <Container>
       <a href={deployedUrl} target="_blank" rel="noreferrer">
@@ -39,7 +43,7 @@ function Project({ projectImg, deployedUrl, githubUrl, name }) {
           ></Figure.Image>
           <Figure.Caption className="fs-4 d-flex flex-row justify-content-between">
             {name}
-            {renderGithubIcon()}
+            {renderGithubIcon(githubUrl)}
           </Figure.Caption>
         </Figure>
       </a>
@@ -47,4 +51,5 @@ function Project({ projectImg, deployedUrl, githubUrl, name }) {
   );
 }
 
+// export
 export default Project;

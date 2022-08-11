@@ -4,7 +4,7 @@
 
 The application is my porfolio with pages "About Me", "Portfolio" with my projects, "Contact" a form to contact me, and "Resume" with information about my past experience and skills I have'.
 
-Link to the deployed application:
+Link to the deployed application: https://ozerkerr.github.io/my-portfolio/
 
 -------
 ## Home page (About me)
